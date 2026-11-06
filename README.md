@@ -6,6 +6,8 @@
 
 Current version: 0.3.0
 
+> **Intel Mac edition.** This branch (`intel-support`) of the [`drfcozapata/mash_intel`](https://github.com/drfcozapata/mash_intel) fork builds Mash for **Intel (x86_64) Macs**, which the official releases do not cover. It is an unofficial, build-from-source edition: there is no DMG, the app is ad-hoc signed and not notarized, auto-update is disabled, and `sentrux` and `latexindent` are unavailable on Intel. See [INTEL-MAC.md](INTEL-MAC.md) (written in Spanish) for the changes, build steps and known limitations. Upstream project: [LuisAlejandro/mash](https://github.com/LuisAlejandro/mash).
+
 *Mash* is a desktop workspace for AI-assisted coding. It brings a customized Ghostty terminal, Herdr workspaces, the Fresh editor, Pi, and pinned development tools into one app. Your settings and sessions live in `~/.mash`, separate from the tools you use outside Mash.
 
 ## Install
@@ -15,6 +17,7 @@ Download the latest [Mash release](https://github.com/LuisAlejandro/mash/release
 | Platform | Release asset | Supported environment |
 | --- | --- | --- |
 | macOS | `Mash-<version>-mac-arm64.dmg` | Apple silicon, macOS 14 or newer |
+| macOS (Intel, unofficial) | Built from source on the `intel-support` branch; see [INTEL-MAC.md](INTEL-MAC.md) | Intel x86_64, macOS 14 or newer |
 | Linux | `letsmash-<version>-linux-amd64.deb` or `letsmash-<version>-linux-arm64.deb` | Ubuntu 24.04 with GNOME on Wayland or Xorg |
 
 **macOS:** Open the signed, notarized DMG and copy Mash.app to Applications. Launch Mash from there.
